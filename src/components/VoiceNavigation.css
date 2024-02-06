@@ -1,0 +1,54 @@
+/* VoiceNavigationApp.css */
+
+.voice-navigation-container {
+    padding: 20px;
+}
+
+.navigate {
+    color: #ffb400;
+}
+
+.voice-navigation-container h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.voice-navigation-container button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffdac5;
+    color: #ed4672;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.voice-navigation-container button:hover {
+    background-color: #ed4672;
+    color: #ffdac5;
+}
+
+#result {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px) {
+    .voice-navigation-container {
+        padding: 10px;
+    }
+
+    .voice-navigation-container h1 {
+        font-size: 1.2em;
+    }
+
+    .voice-navigation-container button {
+        font-size: 0.9em;
+    }
+
+    #result {
+        font-size: 1em;
+    }
+}

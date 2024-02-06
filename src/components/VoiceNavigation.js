@@ -8,6 +8,7 @@ import Breathing from "./Breathing/Breathing";
 import MemeWall from "./Meme/Meme";
 import Resources from "../pages/Resources";
 import MentalHealth from "./MentalHealth/MentalHealth";
+import './VoiceNavigation.css'
 
 const VoiceNavigationApp = () => {
   const [activeContent, setActiveContent] = useState(null);
@@ -72,10 +73,10 @@ const VoiceNavigationApp = () => {
         case "meme":
           showContent("meme");
           break;
-         case "resource":
-         showContent("resource") ;
-         break;
-         case "mental health":
+        case "resource":
+          showContent("resource");
+          break;
+        case "mental health":
           showContent("mental health");
           break;
         default:
@@ -103,10 +104,10 @@ const VoiceNavigationApp = () => {
       // return <Expense/>;
       case "meme":
         return <MemeWall />;
-       case "resource":
-        return <Resources/>;
-       case "mental health":
-        return <MentalHealth/>;  
+      case "resource":
+        return <Resources />;
+      case "mental health":
+        return <MentalHealth />;
       default:
         return null;
     }
@@ -114,7 +115,7 @@ const VoiceNavigationApp = () => {
 
   return (
     <div >
-      <h1>Voice-based Navigation</h1>
+      <h3 class="navigate">Voice-based Navigation</h3>
       <button onClick={startRecognition} style={{
         borderRadius: "8px", justifyContent: "center",
         backgroundColor: "#ffdac5", borderBlockColor: "#ed4672", WebkitTextFillColor: "#ed4672",

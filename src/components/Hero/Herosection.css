@@ -55,7 +55,7 @@
   font-size: 1.5em;
   max-width: 600px;
   margin: 0 auto;
-  color:white;
+  color: white;
 }
 
 .tour-button {
@@ -74,4 +74,20 @@
 .tour-button:hover {
   background-color: #E56600;
   /* Adjust hover color as needed */
+}
+
+@media screen and (max-width: 768px) {
+
+  .hero-text {
+    width: 80%;
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .hero-text {
+    width: 90%;
+    font-size: 50%;
+  }
 }

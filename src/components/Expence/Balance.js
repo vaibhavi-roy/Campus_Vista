@@ -28,7 +28,7 @@ export const Balance = () => {
   return (
     <>
       <h4 style={{ color: "#ff7c15" }}>Your Balance</h4>
-      <h1 style={{ color: "#ff7c15" }}>{moneyFormatter(total)}</h1>
+      <h2 style={{ color: "#ff7c15" }}>{moneyFormatter(total)}</h2>
     </>
   );
 };

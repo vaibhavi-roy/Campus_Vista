@@ -123,3 +123,25 @@ p {
 .therapy-cont {
   padding: 40px 0;
 }
+
+@media only screen and (max-width: 1024px) {
+  .cards-mental {
+    justify-content: center;
+  }
+
+  .card-mental {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-mental {
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card-mental {
+    width: 90vw;
+  }
+}

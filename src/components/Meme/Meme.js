@@ -54,7 +54,7 @@ const MemeWall = () => {
       </div>
 
       <div className="upload-form">
-        <h3>Upload Your Meme</h3>
+        <h3 class="upload">Upload Your Meme</h3>
         <form onSubmit={handleUpload}>
           <input type="file" accept="image/*" />
           <button type="submit" className='upload-button'>Upload</button>

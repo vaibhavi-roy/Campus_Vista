@@ -1,16 +1,15 @@
+/* Resources.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins';
-
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
   padding: 1em;
-
-
 }
 
 .header h1 {
@@ -20,20 +19,15 @@
 
 .resources-form {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 0;
-  margin: 1.5em 0;
   align-items: center;
-
-
+  margin: 1.5em 0;
 }
 
 .resources-input {
-  display: flex;
-  justify-content: center;
   width: 80%;
   padding: 20px;
-
 }
 
 .resources-search-btn {
@@ -50,28 +44,23 @@
   padding: 1.5em;
   border-radius: 10px 0 0 10px;
   width: 100%;
-  height: 200px;
 }
 
 .container-2 {
   display: flex;
-  margin: 50px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4px;
-
-
+  gap: 20px;
+  padding: 0 20px;
 }
 
 .btn-3 {
-
   background-color: #f1f1f1;
   border: none;
   border-radius: 4px;
-  padding: 10px;
-  margin: 5px;
+  padding: 20px;
   cursor: pointer;
-  width: 30%;
+  flex: 0 1 calc(30% - 40px);
   text-align: left;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
@@ -85,91 +74,58 @@
 }
 
 .btn-3 p {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
-.resources {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-}
-
-.resource-img img {
-  width: 500px;
-  height: 300px;
-}
-
-.resource-content {
-  padding: 20px;
-  margin-top: 50px;
-}
-
-
-
-.resource-btn {
-  font-size: 1.2em;
-  padding: 10px 20px;
-  background-color: #FF7C15;
-  /* Adjust color as needed */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-}
-
-/*
- .tabs{
-  display: flex;
-  justify-content: center;
-  gap: 1em;
- }
-.tabs button{
-  padding: 20px;
- cursor: pointer;
- border-radius: 10px;
- border: none;
- font-weight: 500;
-}
-.tabs button:active{
-  background-color: #ed4672;
-  color: #ffda65;
-}*/
 .link-2 {
   background-color: #ff7c15;
   text-align: center;
   padding: 8px;
   border-radius: 10px;
-  margin-top: 10px;
-
 }
 
 .link-2 a {
   color: #ffda65;
   text-decoration: none;
-
 }
 
 .wrap {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
-}
-
-
-.category {
-  border: 1px solid #ed4672;
-  color: #ed4672;
-  border-radius: 10px;
-  padding: 5px;
-  text-align: center;
-  margin-top: 10px;
-
-
 }
 
 .resources-title {
-  font-size: 30px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-3 {
+    flex-basis: calc(50% - 40px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-3 {
+    flex-basis: calc(100% - 40px);
+  }
+
+  .resources-form {
+    align-items: stretch;
+  }
+
+  .resources-search {
+    height: auto;
+  }
+
+  .resources-input,
+  .resources-search-btn {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .container-2 {
+    padding: 0;
+  }
 }

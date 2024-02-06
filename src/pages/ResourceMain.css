@@ -1,0 +1,33 @@
+.resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.resource-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resource-img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .resources {
+        flex-direction: row;
+    }
+
+    .resource-img {
+        flex: 1;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .resource-content {
+        flex: 1;
+        margin-top: 0;
+    }
+}
