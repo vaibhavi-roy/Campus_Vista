@@ -4,7 +4,6 @@ import resourceImg from "../images/resources-2.jpg";
 import "./Resources.css";
 import { Link } from "react-router-dom";
 import './ResourceMain.css'
-
 const ResourceMain = () => {
   const navigate = useNavigate();
   return (

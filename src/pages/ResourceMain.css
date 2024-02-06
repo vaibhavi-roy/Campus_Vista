@@ -1,9 +1,26 @@
+/* Resources.css */
+
 .resources {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin: 20px;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resource-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.resource-img img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .resource-content {
@@ -11,23 +28,39 @@
     margin-top: 20px;
 }
 
-.resource-img {
-    max-width: 100%;
+.resource-content h1 {
+    font-size: 2em;
+    color: #333;
 }
 
-@media only screen and (min-width: 768px) {
+.resource-content p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.resource-btn {
+    background-color: #fd862c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.resource-btn:hover {
+    background-color: #ff7c15;
+}
+
+@media only screen and (max-width: 768px) {
     .resources {
-        flex-direction: row;
+        margin: 10px;
+        padding: 10px;
     }
 
     .resource-img {
-        flex: 1;
-        margin-right: 20px;
-        margin-bottom: 0;
-    }
-
-    .resource-content {
-        flex: 1;
-        margin-top: 0;
+        max-width: 100%;
     }
 }

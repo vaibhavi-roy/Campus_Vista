@@ -1,9 +1,10 @@
 import React from "react";
-import  ButtonGroup  from "./ButtonGroup";
+import ButtonGroup from "./ButtonGroup";
 import TimerButton from "./TimerButton";
 import Time2 from "./Time2";
 import mediaudio from '../../src/audio/music.mpeg';
 import "./styles.css"; // TODO: improve styling
+import "./Timer.css"
 
 const default_minutes = 25;
 const seconds = 60;
@@ -76,9 +77,9 @@ export default class Pomodoro extends React.Component {
                 />
                 <div>
                     <ButtonGroup>
-                        <TimerButton onClick={this.startTimer}>start</TimerButton>
-                        <TimerButton onClick={this.stopTimer}>stop</TimerButton>
-                        <TimerButton onClick={this.resetTimer}>reset</TimerButton>
+                        <TimerButton onClick={this.startTimer}><h2 class="timerButton">start</h2></TimerButton>
+                        <TimerButton onClick={this.stopTimer}><h2 class="timerButton">stop</h2></TimerButton>
+                        <TimerButton onClick={this.resetTimer}><h2 class="timerButton">reset</h2></TimerButton>
                     </ButtonGroup>
                 </div>
             </div>
