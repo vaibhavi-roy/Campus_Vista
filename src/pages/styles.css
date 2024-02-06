@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.pomodoro {
+    margin: 0 auto;
+    font-size: 2em;
+    height: 100vh;
+    background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: column;
+
+}
+
+#title {
+    padding: 20px;
+}

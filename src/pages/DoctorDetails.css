@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.doctors{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px;
+   
+}
+.doctors .btn-4{
+    width: 30%;
+
+}
+.btn-4 button{
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #FF7C15;
+    /* Adjust color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+.btn-4 img{
+    width: 350px
+}

@@ -1,0 +1,9 @@
+.form-2 {
+    margin-left: 50%;
+    padding: 80px;
+    width: 80%;
+}
+
+.agora-submit:hover {
+    background-color: rgb(123, 180, 17);
+}
