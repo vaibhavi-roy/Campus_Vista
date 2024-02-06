@@ -50,7 +50,7 @@ export const doctors = [
 const DoctorDetails = () => {
   return (
     <div>
-      <h1>Meet with your doctor personally</h1>
+      <h2 class="meet">Meet with your doctor personally</h2>
       <div className="doctors">
         {doctors.map((doc) => (
           <button className="btn-4" key={doc.rating}>

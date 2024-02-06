@@ -1,25 +1,31 @@
-*{
+/* DoctorDetails.css */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.doctors{
+
+.doctors {
     display: flex;
     gap: 1em;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 60px;
-   
+    padding: 2rem;
 }
-.doctors .btn-4{
-    width: 30%;
 
+.btn-4 {
+    width: 45%;
+    /* Adjust width for smaller screens */
+    max-width: 350px;
+    /* Limit maximum width */
 }
-.btn-4 button{
-    font-size: 1.2em;
+
+.btn-4 button {
+    font-size: 1em;
+    /* Adjust font size for smaller screens */
     padding: 10px 20px;
     background-color: #FF7C15;
-    /* Adjust color as needed */
     color: white;
     border: none;
     border-radius: 5px;
@@ -27,6 +33,38 @@
     transition: background-color 0.3s ease;
     margin-bottom: 10px;
 }
-.btn-4 img{
-    width: 350px
+
+.btn-4 img {
+    width: 100%;
+    /* Make images responsive */
+    max-width: 100%;
+    height: auto;
+}
+
+.meet {
+    color: #FF7C15;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-4 {
+        width: 90%;
+        /* Adjust width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .doctors {
+        padding: 1rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .btn-4 {
+        width: 100%;
+        /* Make buttons full width on smaller screens */
+    }
+
+    .btn-4 button {
+        font-size: 0.9em;
+        /* Adjust font size for smaller screens */
+    }
 }
